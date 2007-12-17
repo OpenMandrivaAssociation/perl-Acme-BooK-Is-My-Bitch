@@ -18,7 +18,6 @@ BuildRequires: perl-Acme-MetaSyntactic >= 0.89
 BuildRequires: perl(File::Slurp)
 BuildRequires: perl(File::Find)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 At YAPC::EU::2006, in Birmingham, England, BooK auctioned the right for
