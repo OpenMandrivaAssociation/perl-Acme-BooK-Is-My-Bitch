@@ -1,7 +1,7 @@
 %define	module	Acme-BooK-Is-My-Bitch
 %define	name	perl-%{module}
 %define version 0.02
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name:		%{name}
 Version:	%{version}
