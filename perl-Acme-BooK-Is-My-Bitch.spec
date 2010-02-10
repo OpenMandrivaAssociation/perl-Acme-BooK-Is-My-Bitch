@@ -14,9 +14,11 @@ Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
-BuildRequires: perl-Acme-MetaSyntactic >= 0.89
+
+BuildRequires: perl(Acme::MetaSyntactic)
 BuildRequires: perl(File::Slurp)
 BuildRequires: perl(File::Find)
+BuildRequires: perl(UNIVERSAL::isa)
 
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
