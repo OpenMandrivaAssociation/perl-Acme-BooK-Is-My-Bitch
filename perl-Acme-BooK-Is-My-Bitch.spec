@@ -1,5 +1,5 @@
-%define	upstream_name Acme-BooK-Is-My-Bitch
-%define version       0.02
+%define	upstream_name    Acme-BooK-Is-My-Bitch
+%define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Acme::BooK::Is::My::Bitch has a great story behind it
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
@@ -31,7 +31,7 @@ Cog asked if the module had to exist by that time, and BooK said "No."
 BIG MISTAKE!
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
