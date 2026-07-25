@@ -1,15 +1,15 @@
 %define	upstream_name    Acme-BooK-Is-My-Bitch
-%define upstream_version 0.02
+%define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Acme::BooK::Is::My::Bitch has a great story behind it
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/book/Acme-BooK-Is-My-Bitch
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOOK/Acme-BooK-Is-My-Bitch-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
