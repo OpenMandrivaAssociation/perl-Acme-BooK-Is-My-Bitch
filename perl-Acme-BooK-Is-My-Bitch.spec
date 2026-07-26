@@ -1,15 +1,13 @@
 %define	upstream_name    Acme-BooK-Is-My-Bitch
-%define upstream_version 0.05
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.05
+Release:	2
 
 Summary:	Acme::BooK::Is::My::Bitch has a great story behind it
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/book/Acme-BooK-Is-My-Bitch
-Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOOK/Acme-BooK-Is-My-Bitch-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOOK/Acme-BooK-Is-My-Bitch-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ Cog asked if the module had to exist by that time, and BooK said "No."
 BIG MISTAKE!
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -56,10 +54,7 @@ BIG MISTAKE!
 * Wed Feb 10 2010 Jérôme Quelin <jquelin@mandriva.org> 0.20.0-1mdv2011.0
 + Revision: 503945
 - adding missing buildrequires:
-- rebuild using %%perl_convert_version
-- rebuild using %%perl_convert_version
-
-  + Thierry Vignaud <tv@mandriva.org>
+- rebuild using %0.05 rebuild using %0.05 Thierry Vignaud <tv@mandriva.org>
     - rebuild
 
 * Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.02-5mdv2009.0
